@@ -8,7 +8,9 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
+.fa{
+  font-weight: 900;
+}
 
 ul{list-style: none;}
 
@@ -31,10 +33,6 @@ padding-bottom:30px;
 
   .w100,.col-12{
   width:100%;}
-
-/* .container{
-  width:1200px;
-  margin:0 auto;} */
 
 .clearfix::after{
   clear:both;
@@ -61,20 +59,12 @@ padding-bottom:30px;
   line-height: 40px;
   min-width: 100px;
   padding: 0 20px;
-  border-radius: 5px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  border:1px solid #fff;
   display: inline-block;
   text-align: center;
 }
-/*
-  ::before,::after{
-  content:"";
-  display:inline-block;
-  width:15%;
-  height:4px;
-  background-color:#fff;
-  line-height: 4px;
-  vertical-align:middle;
-} */
 
 /* .centered{
   position: absolute;
@@ -93,7 +83,8 @@ left: 50%;} */
 
 .sidebar{width:200px;
 height:100%;
-background-color: green;
+background-color:#000;
+color:#fff;
 }
 .sidebar-container{
   height:100%;
@@ -102,17 +93,21 @@ background-color: green;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
+.logo-spotify img{filter: invert(100%);
+}
+.logo-spotify a{
+  color:#fff;}
 
-.main{
+  .main{
   margin-top:50px;
   width:calc(100% - 200px);
   overflow-y:auto;
   height:100%;
 }
 .upgrade{
+  background-color: #080b12;
   text-align: right;
   width:calc(100% - 200px);
-  background-color: pink;
   position:fixed;
   height:50px;
   top:0;
@@ -121,6 +116,8 @@ background-color: green;
 
 .main-container{
   padding:10px;
+  color:#fff;
+  background-color: #141822;
 }
 
 .nav{
@@ -150,16 +147,60 @@ background-color: green;
 border-radius: 50%;
 }
 footer{
+  color:#fff;
   display:flex;
   justify-content: space-between;
   height:80px;
   padding:10px;
-  background-color: grey;
+  background-color: #282828;
 }
-footer div{
+.footer-l,.footer-c,.footer-r,.footer-c .play,.footer-c .bar{
   display:flex;
 }
+.footer-l img{
+height:50px;
+width:50px;
+}
+.footer-l i{
+  align-self:center;
+}
+.footer-c{flex-direction:column;
+justify-content: center;
+align-items:center;}
+footer .play,.footer-r{align-items: center;}
+footer .playing i:before{
+content:"";
+display:inline-block;
+position:relative;
+border-bottom: 3px solid #ccc;
+width:180px;
+bottom:5px;
+}
+footer .playing i:before{
+content:"";
+display:inline-block;
+position:relative;
+border-bottom: 3px solid #ccc;
+width:180px;
+bottom:5px;
+}
 
+footer .sound i:before{
+content:"";
+display:inline-block;
+position:relative;
+border-bottom: 3px solid #ccc;
+width:180px;
+bottom:5px;
+}
+footer .sound i:before{
+content:"";
+display:inline-block;
+position:relative;
+border-bottom: 3px solid #ccc;
+width:25px;
+bottom:5px;
+}
 /* fine codice */
 
 /* Extra Small Devices, Phones */
