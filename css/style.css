@@ -1,0 +1,147 @@
+/* reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* body font-family */
+body{ font-family: Arial sans-serif;
+  font-size:16px;
+}
+
+ul{list-style: none;}
+
+a{text-decoration:none;
+    /* color:#fff; */
+}
+/* h1,h2,h3,h4,h5,p{color:#000;
+padding-bottom:30px;
+} */
+
+/* classi font */
+.big-text{font-size:70px;}
+.med-text{font-size:40px;}
+.normal-text{font-size:20px;}
+.small-text{font-size:14px;}
+
+/* classi padding */
+.p50-top{padding-top: 50px;}
+.p50-bottom{padding-bottom: 50px;}
+
+  .w100,.col-12{
+  width:100%;}
+
+/* .container{
+  width:1200px;
+  margin:0 auto;} */
+
+.clearfix::after{
+  clear:both;
+  display:table;
+  content:"";
+  }
+
+.fl{float:left;}
+.fr{float:right;}
+.col-2{width:16.666%;}
+.col-3{width:25%;}
+.col-4{width:33.333%;}
+.col-5{width:41.666%;}
+.col-6{width:50%;}
+.col-7{width:58.333%;}
+.col-8{width:66.666%;}
+.col-9{width:75%;}
+.col-10{width:83.333%;}
+[class*="col-"]{;}
+
+.button {
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  min-width: 100px;
+  padding: 0 20px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+}
+/*
+  ::before,::after{
+  content:"";
+  display:inline-block;
+  width:15%;
+  height:4px;
+  background-color:#fff;
+  line-height: 4px;
+  vertical-align:middle;
+} */
+
+/* .centered{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+left: 50%;} */
+
+/* codice */
+
+.wrapper{
+  height:100vh;
+  width:100vw;
+  max-width: 100%;
+  background-color: red;
+}
+
+.sidebar{width:200px;
+height:100%;
+background-color: green;
+overflow-y: auto;}
+
+.main{
+  margin-top:50px;
+  width:calc(100% - 200px);
+  overflow-y:auto;
+  height:100%;
+}
+.upgrade{
+  width:calc(100% - 200px);
+  background-color: pink;
+  position:fixed;
+  height:50px;
+  top:0;
+  right:0;
+}
+
+.main-container{
+  padding:10px;
+}
+
+.nav{
+  text-align: center;
+}
+.nav ul li{
+  display:inline-block;
+}
+footer{
+  height:80px;
+  padding:10px;
+  background-color: black;
+}
+/* fine codice */
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
