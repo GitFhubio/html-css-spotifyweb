@@ -110,6 +110,7 @@ background-color: green;
   height:100%;
 }
 .upgrade{
+  text-align: right;
   width:calc(100% - 200px);
   background-color: pink;
   position:fixed;
@@ -127,6 +128,26 @@ background-color: green;
 }
 .nav ul li{
   display:inline-block;
+}
+.recently{
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: space-between
+}
+.recommended, .popular{
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.recently .cover,.recommended .cover,.popular .cover{
+  width:100px;
+}
+.recently img,.recommended img,.popular img{
+  width:100%;
+  height:100px;
+}
+.popular img{
+border-radius: 50%;
 }
 footer{
   display:flex;
