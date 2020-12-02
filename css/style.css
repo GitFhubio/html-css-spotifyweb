@@ -76,7 +76,7 @@ padding-bottom:30px;
 }
 
 .sidebar{width:200px;
-height:100%;
+height:calc(100% - 90px);
 background-color:#000;
 color:#fff;
 }
@@ -91,9 +91,14 @@ color:#fff;
 }
 .logo-spotify a{
   color:#fff;}
-
-.main{
+.playlist{
+  height:30%;
+  overflow-y: auto;
+}
+.main-container{
+    background-color: #141822;
   overflow:hidden;
+  width:calc(100% - 200px);
   height:calc(100% - 90px);
 }
 .upgrade{
@@ -107,12 +112,12 @@ color:#fff;
   z-index:1;
 }
 .main-content{
-  width:calc(100% - 200px);
+  margin-top:90px;
+  width:100%;
   overflow-y:auto;
   padding:10px;
   color:#fff;
-  background-color: #141822;
-  height:1200px;
+  height:100%;
 }
 
 
