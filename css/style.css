@@ -71,6 +71,10 @@ padding-bottom:30px;
   border:1px solid #fff;
   text-align: center;
 }
+.button:hover
+{  padding: 20px 35px;
+  margin-right: 0;
+}
 
 /* codice */
 
@@ -102,13 +106,26 @@ padding-right: 15px;
   padding-top: 10px;
 }
 .logo-spotify img{filter: invert(100%);
+  vertical-align: text-bottom;
+}
+.copy{
+  position:relative;
+  bottom:10px;
+  right:5px;
+  font-size: 10px;
 }
 .logo-spotify a{
   color:#fff;}
-
+  span.spotify{
+    font-size: 22px;
+  }
 .playlists{
   height:30%;
   overflow-y: auto;
+}
+.playlist i{font-size: 35px;}
+.playlist i,.playlist span{
+  vertical-align: middle;
 }
 .sidebar ul li{
   line-height: 3;
@@ -210,15 +227,15 @@ footer{
   padding:10px;
   background-color: #282828;
 }
-.footer-l,.footer-c,.footer-r,.footer-c .play,.footer-c .bar{
+.footer-l,.footer-c,.footer-r,.footer-c .play,.footer-c .bar,.footer-l .heartfolder{
   display:flex;
 }
 .footer-l img{
 height:50px;
 width:50px;
 }
-.footer-l i{
-  align-self:center;
+.footer-l {
+  align-items:center;
 }
 .footer-c{flex-direction:column;
 justify-content: center;
@@ -303,5 +320,8 @@ bottom:5px;
   }
   .upgrade{
     width:calc(100% - 50px);
+  }
+  .footer-l .heartfolder{
+    flex-direction: column;
   }
   }
