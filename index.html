@@ -12,7 +12,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="wrapper clearfix">
+  <!-- inizio wrapper contenente tutto footer compreso -->
+  <div class="wrapper">
+    <!-- inizio main che contiene tutto tranne footer -->
+  <div class="main">
+    <!-- inizio sidebar  -->
     <div class="sidebar fl">
     <div class="sidebar-container">
      <div class="sidebar-up">
@@ -49,11 +53,13 @@
      </div>
     </div>
     </div>
-    <div class="main fl">
+    <!-- fine sidebar -->
+    <!-- inizio main container -->
+    <div class="main-container">
       <div class="upgrade">
         <a href="" class="button">Effettua l'upgrade</a>
       </div>
-      <div class="main-container">
+      <div class="main-content">
         <div class="nav">
           <ul>
             <li>In evidenza</li>
@@ -127,8 +133,12 @@
           </div>
         </div>
         </section>
+        <!-- fine main content -->
       </div>
+      <!-- fine main container -->
     </div>
+      </div>
+ <!-- inizio footer -->
     <footer>
       <div class="footer-l">
         <a href="#">
@@ -170,10 +180,10 @@
         <i class="fa fa-volume-up"></i>
         <span class="sound">  <i class="fa fa-circle"></i></span>
       </div>
-
     </footer>
-
-  </div>
+    <!-- chiusura footer -->
+</div>
+<!-- chiusura wrapper -->
 
 </body>
 </html>
