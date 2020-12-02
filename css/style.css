@@ -15,7 +15,11 @@ background-color: yellow;}
 ul{list-style: none;}
 
 a{text-decoration:none;
-    /* color:#fff; */
+    color:#fff;
+    opacity:0.5;
+}
+a:hover {
+    opacity:1;
 }
 /* h1,h2,h3,h4,h5,p{color:#000;
 padding-bottom:30px;
@@ -93,8 +97,8 @@ color:#fff;
 .logo-spotify a{
   color:#fff;}
 
-.playlist{
-  height:45%;
+.playlists{
+  height:30%;
   overflow-y: auto;
 }
 
@@ -152,8 +156,28 @@ font-size: 24px;}
   width:100%;
   height:100px;
 }
+.immagine{
+  position:relative;
+}
+.immagine i{
+  transform: translate(-50%,-50%);
+  position:absolute;
+  left:50%;
+  top:50%;
+}
+.cover .overlay {opacity:0;
+height:100%;
+width:100%;}
+
+.cover:hover .overlay {opacity:1;}
+.cover:hover img {filter:opacity(30%);}
 .popular img{
 border-radius: 50%;
+}
+.layover{
+  position:absolute;
+  width:100%;
+  height:100%;
 }
 footer{
   color:#fff;
@@ -246,7 +270,7 @@ bottom:5px;
       align-content: center;
     }
 
-  .sidebar span , .sidebar .playlist{
+  .sidebar span , .sidebar .playlists, .sidebar .playlist{
     display:none;
   }
   .sidebar{text-align: center;
