@@ -152,7 +152,7 @@ font-size: 24px;}
 .upgrade{
   background-color: #080b12;
   text-align: right;
-  width:calc(100% - 200px);
+  width:calc(100vw - 200px);
   position:fixed;
   height:90px;
   top:0;
@@ -238,7 +238,6 @@ width:50px;
 }
 .footer-l {
   align-items:center;
-  /* width:20%; */
 }
 
 .footer-l div  {
@@ -247,14 +246,14 @@ padding-left: 5px;
 .footer-l .fa-folder-o  {
 padding-left: 5px;
 }
+.footer-l .branonome:hover{
+  text-decoration: underline;
+}
 .footer-c{flex-direction:column;
 justify-content: center;
 align-items:center;
-/* width:50%; */
 }
-.footer-r{
-  /* width:30%; */
-}
+
 footer .play i{
   padding:0 10px;
 }
@@ -264,7 +263,7 @@ content:"";
 display:inline-block;
 position:relative;
 border-bottom: 3px solid #ccc;
-width:15vw;
+width:180px;
 bottom:5px;
 }
 footer .playing:before{
@@ -272,7 +271,7 @@ content:"";
 display:inline-block;
 position:relative;
 border-bottom: 3px solid #ccc;
-width:15vw;
+width:50px;
 bottom:5px;
 }
 
@@ -281,7 +280,7 @@ content:"";
 display:inline-block;
 position:relative;
 border-bottom: 3px solid #ccc;
-width:5vw;
+width:25px;
 bottom:5px;
 }
 footer .sound:after{
@@ -289,11 +288,11 @@ content:"";
 display:inline-block;
 position:relative;
 border-bottom: 3px solid #ccc;
-width:5vw;
+width:50px;
 bottom:5px;
 }
 .footer-r{
-  justify-content: center;
+  justify-content: flex-end;
 
 }
 .footer-r i{
@@ -302,6 +301,10 @@ padding-right: 10px;
 .footer-r .fa-circle{
 padding-right: 0;
 }
+.playing i,.sound i{display:none;}
+.bar:hover .playing i,.shuffle:hover .sound i{display:inline-block;}
+.bar:hover .playing:before,.shuffle:hover .sound:before
+{border-color: lightgreen;}
 /* fine codice */
 
 
@@ -317,6 +320,23 @@ padding-right: 0;
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  footer .playing:after{
+  width:90px;
+
+  }
+  footer .playing:before{
+  width:25px;
+  }
+
+  footer .sound:before{
+
+  width:12.5px;
+
+  }
+  footer .sound:after{
+  width:25px;
+
+  }
 
 }
 
@@ -354,5 +374,4 @@ padding-right: 0;
   }
   .footer-l .fa-folder-o  {
   padding-left:0;
-  }
   }
