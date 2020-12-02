@@ -92,8 +92,7 @@ color:#fff;
 .logo-spotify a{
   color:#fff;}
 
-  .main{
-  /* width:calc(100% - 200px); */
+.main{
   overflow:hidden;
   height:calc(100% - 90px);
 }
@@ -108,9 +107,12 @@ color:#fff;
   z-index:1;
 }
 .main-content{
+  width:calc(100% - 200px);
+  overflow-y:auto;
   padding:10px;
   color:#fff;
   background-color: #141822;
+  height:1200px;
 }
 
 
