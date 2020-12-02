@@ -75,7 +75,7 @@ left: 50%;} */
 /* codice */
 
 .wrapper{
-  height:calc(100vh - 80px);
+  height:100vh;
   width:100vw;
   max-width: 100%;
   background-color: red;
@@ -99,7 +99,7 @@ color:#fff;
   color:#fff;}
 
   .main{
-  margin-top:50px;
+  /* margin-top:50px; */
   width:calc(100% - 200px);
   overflow-y:auto;
   height:100%;
