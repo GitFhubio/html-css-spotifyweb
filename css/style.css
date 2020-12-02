@@ -87,14 +87,24 @@ color:#fff;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
+
 .logo-spotify img{filter: invert(100%);
 }
 .logo-spotify a{
   color:#fff;}
+
 .playlist{
-  height:30%;
+  height:45%;
   overflow-y: auto;
 }
+
+.installapp{border-bottom:1px solid #ccc;
+padding:10px 0;}
+.user{
+padding:10px 0;}
+.user i{
+font-size: 24px;}
+
 .main-container{
     background-color: #141822;
   overflow:hidden;
@@ -235,5 +245,11 @@ bottom:5px;
       justify-content: center;
       align-content: center;
     }
+
+  .sidebar span , .sidebar .playlist{
+    display:none;
+  }
+  .sidebar{text-align: center;
+  }
 
   }
