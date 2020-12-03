@@ -149,7 +149,7 @@ font-size: 24px;}
   width:calc(100% - 200px);
   position:fixed;
   height:90px;
-  z-index:1;
+  z-index:2;
 }
 .content{
   overflow-y:auto;
@@ -202,9 +202,6 @@ display:block;
 }
 .cover{
 width:calc(100% / 6 - 20px);
-}
-
-.cover{
   margin:20px 10px;
   text-align: center;
 }
@@ -249,6 +246,9 @@ border-radius: 50%;
 /* Inizio footer */
 
 footer{
+  position:fixed;
+  z-index:1;
+  bottom:0;
   color:#fff;
   display:flex;
   justify-content: space-between;
@@ -367,7 +367,6 @@ padding-right: 0;
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
 
    .cover{
     width:calc(100% / 2 - 20px);
