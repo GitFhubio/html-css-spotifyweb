@@ -294,7 +294,9 @@ footer .number{width:5%;
 text-align: center;}
 footer .playing{
   position:relative;
-  width:90%;
+  width:85%;
+  margin-left:2.5%;
+  margin-right:2.5%;
   margin-top: 10px;
   height:3px;
   background-color:#ccc;
