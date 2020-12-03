@@ -13,7 +13,7 @@
 </head>
 <body>
   <!-- inizio wrapper contenente tutto footer compreso -->
-  <div class="wrapper">
+  <div class="wrapper clearfix">
     <!-- inizio main che contiene tutto tranne footer -->
     <!-- <div class="main"> -->
     <!-- inizio sidebar  -->
@@ -165,8 +165,8 @@
     </div>
     <!-- </div> -->
     <!-- inizio footer -->
-    <footer>
-      <div class="footer-l">
+    <footer class="flex">
+      <div class="footer-left flex">
         <a href="#">
           <img src="img/sinister.jpeg" alt="">
         </a>
@@ -174,12 +174,12 @@
           <p>Sinister</p>
           <a class="branonome" href="#">Brano nome</a>
         </div>
-        <div class="heartfolder">
+        <div class="heartfolder flex">
         <a href=""><i class="fa fa-heart-o"></i></a>
         <a href=""><i class="fa fa-folder-o"></i></a>
       </div>
       </div>
-      <div class="footer-c">
+      <div class="footer-center flex">
         <div class="play">
           <a href=""><i class="fa fa-random"></i></a>
           <a href=""><i class="fa fa-step-backward"></i></a>
@@ -188,16 +188,16 @@
           <a href=""><i class="fa fa-repeat"></i></a>
         </div>
         <div class="bar">
-          <div class="number-l">
+          <div class="number-left">
             0:25
           </div>
           <span class="playing"><i class="fa fa-circle"></i></span>
-          <div class="number-r">
+          <div class="number-right">
             4:35
           </div>
         </div>
       </div>
-      <div class="footer-r">
+      <div class="footer-right flex">
         <i class="fa fa-server"></i>
         <i class="fa fa-desktop"></i>
         <i class="fa fa-volume-up"></i>
@@ -205,6 +205,8 @@
         <span class="sound"><i class="fa fa-circle"></i></span>
       </div>
       </div>
+    <!-- chiusura main -->
+
     </footer>
     <!-- chiusura footer -->
   </div>
