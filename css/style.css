@@ -10,7 +10,9 @@ body {
 .fa{
   font-weight: 900;
 }
-
+h1{
+  padding-bottom:10px;
+}
 ul{list-style: none;}
 
 a{text-decoration:none;
@@ -61,14 +63,19 @@ a:hover {
 }
 /* codice */
 
+/* wrapper contiene tutto */
 .wrapper{
   height:100vh;
   width:100vw;
   max-width: 100%;
 }
+/* main contiene tutto tranne footer */
 main {
   height: calc(100% - 90px);
 }
+
+/* inizio aside */
+
 .sidebar{width:200px;
 height:100%;
 background-color:#000;
@@ -134,6 +141,8 @@ padding:10px 0;}
 .user i{
 font-size: 24px;}
 
+/* fine aside */
+
 .call-to-action{
   background-color: #080b12;
   opacity:0.9;
@@ -155,6 +164,8 @@ font-size: 24px;}
   margin-top:90px;
   width:100%;
 }
+/* nav spotify */
+
 .nav{
   height:90px;
   text-transform:uppercase;
@@ -174,11 +185,13 @@ width:30%;
 height:2px;
 background:#ADFF2E;
 display:none;
-left:33%;
+left:33.33%;
 }
 .nav ul li:hover .underline:after{
 display:block;
 }
+/* fine nav spotify */
+/* inizio cover */
 .recently{
   display:flex;
   flex-wrap: wrap;
@@ -201,6 +214,9 @@ width:calc(100% / 6 - 20px);
 }
 .cover span{
   font-size: 10px;
+}
+section>span{
+  opacity:0.5;
 }
 .recently img,.recommended img,.popular img{
   width:100%;
@@ -230,6 +246,9 @@ border-radius: 50%;
   width:100%;
   height:100%;
 }
+/* Fine cover */
+/* Inizio footer */
+
 footer{
   color:#fff;
   display:flex;
@@ -348,7 +367,7 @@ padding-right: 0;
     padding-left:5px;
     padding-right:5px;
     }
-    
+
   .sidebar span , .sidebar .playlists, .sidebar .playlist{
     display:none;
   }
@@ -363,3 +382,5 @@ padding-right: 0;
   .footer-left .fa-folder-o  {
   padding-left:0;
   }
+
+}
