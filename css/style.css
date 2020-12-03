@@ -271,13 +271,19 @@ width:50px;
 }
 
 .footer-left div  {
-padding-left: 5px;
+padding-left: 10px;
 }
 .footer-left .fa-folder-o  {
 padding-left: 5px;
 }
-.footer-left .branonome:hover{
+.footer-left .nowplaying a:hover{
   text-decoration: underline;
+}
+.footer-left .nowplaying p{
+font-size:0.9em;
+}
+.footer-left .nowplaying a{
+font-size: 0.7em;
 }
 .footer-center{flex-direction:column;
 justify-content: center;
