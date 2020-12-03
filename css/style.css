@@ -24,6 +24,9 @@ display:none;
 left:33.33%;
 }
 .flex{display:flex;}
+
+section>span{padding-left: 10px;
+}
 .item span, a , section>span{ opacity:0.5;
 }
 
@@ -34,9 +37,9 @@ a:hover {
 /* classi font */
 
 h1{
-  padding-bottom:10px;}
+  padding-bottom:10px;
+padding-left: 10px;}
 
-.big-text{font-size:70px;}
 .med-text{font-size:40px;}
 .normal-text{font-size:20px;}
 .small-text{font-size:14px;}
@@ -162,7 +165,7 @@ vertical-align: middle;
   border-radius:999em;
 }
 
- .sidebar ul li{
+.sidebar ul li{
   padding-top:5px;
   padding-bottom: 5px;
 }
@@ -221,17 +224,16 @@ display:block;
 /* fine nav spotify */
 /* inizio item */
 .recently{
-  display:flex;
   flex-wrap: wrap;
 }
-.recommended, .popular{
-  display:flex;
-  /* flex-wrap: nowrap; */
-  /* justify-content: flex-start; */
-}
+/* .recommended, .popular{
+  flex-wrap: nowrap;
+ justify-content: flex-start;
+} inutile meglio agire di margin e media*/
+
 .item{
 width:calc(100% / 6 - 20px);
-  margin:20px 10px;
+  margin :20px 10px;
   text-align: center;
 }
 .item p{
@@ -241,7 +243,7 @@ width:calc(100% / 6 - 20px);
   font-size: 10px;
 }
 
-.recently img,.recommended img,.popular img{
+section img{
   width:100%;
   height:auto;
 }
