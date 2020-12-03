@@ -310,7 +310,7 @@ padding-right: 0;
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-  .main-container{
+  .content{
     width:calc(100% - 50px);}
     .sidebar{width:50px;
     padding-left:5px;
@@ -333,7 +333,7 @@ padding-right: 0;
   }
   .sidebar{text-align: center;
   }
-  .upgrade{
+  .call-to-action{
     width:calc(100% - 50px);
   }
   .footer-left .heartfolder{
