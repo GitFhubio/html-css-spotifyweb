@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 /* body font-family */
 body {
   font-family: 'Montserrat', sans-serif;
@@ -36,17 +37,18 @@ a:hover {
 
 /* classi font */
 
-h1{
-  padding-bottom:10px;
-padding-left: 10px;}
-
 .med-text{font-size:40px;}
 .normal-text{font-size:20px;}
 .small-text{font-size:14px;}
 
 /* classi padding */
-.p50-top{padding-top: 50px;}
-.p50-bottom{padding-bottom: 50px;}
+.p10-left{padding-left: 10px;}
+.p10-bottom{padding-bottom: 10px;}
+.p10-right{padding-right: 10px;}
+.p10-top{padding-top: 10px;}
+.p5-bottom{padding-bottom: 5px;}
+.p5-top{padding-top: 5px;}
+.p10{padding:10px;}
 
 /* classi float */
 .fl{float:left;}
@@ -102,9 +104,7 @@ padding-right: 15px;
 
 .sidebar-up{
   flex-direction: column;
-  height:calc(100% - 80px)}
-.sidebar span{
-  padding-left: 10px;
+  height:calc(100% - 80px);
 }
 .sidebar .menu{font-size: 13px;
 }
@@ -116,15 +116,14 @@ padding-right: 15px;
 }
 .copy{
   position:relative;
+  left:2px;
   bottom:10px;
-  right:5px;
   font-size: 10px;
 }
 
-  span.spotify{
-    font-size: 22px;
-  }
-
+span.spotify{
+  font-size: 22px;
+}
 .playlists{
   overflow-y: auto;
   font-size: 13px;
@@ -132,17 +131,15 @@ padding-right: 15px;
 .playlist div{
   vertical-align: middle;
   display:inline-block;
-  width:35px;
+  color:#000;
   text-align: center;
-  line-height: 35px;
-  height:35px;
+  width:35px;
+  font-size: 35px;
+  line-height:35px;
+  height: 35px;
  background-color: #fff;
 }
 
-.playlist div i{
-  color:#000;
-  font-weight: 100;
-}
 .sidebar-down{
 height:80px;
 }
@@ -159,26 +156,22 @@ height:auto;
 vertical-align: middle;
 }
 
+.installapp img{filter: invert(100%);
+width:12px;
+height:auto;
+}
 
 .user img{
   background-color:#808080;
   border-radius:999em;
 }
 
-.sidebar ul li{
-  padding-top:5px;
-  padding-bottom: 5px;
-}
 .playlist p:first-child{
   text-transform: uppercase;
   font-weight: 700;
-  padding-bottom: 10px;
 }
 .installapp{border-bottom:1px solid #ccc;
-padding:10px 0;
 font-size:13px; }
-.user{
-padding:10px 0;}
 .user i{
 font-size: 24px;}
 
@@ -200,14 +193,12 @@ font-size: 24px;}
 }
 .main-content{
   background-color: #141822;
-  padding:10px;
   margin-top:90px;
   width:100%;
 }
 /* nav spotify */
 
 .nav{
-  padding:10px 0;
   text-transform:uppercase;
   font-weight: 700;
   text-align: center;
@@ -226,10 +217,6 @@ display:block;
 .recently{
   flex-wrap: wrap;
 }
-/* .recommended, .popular{
-  flex-wrap: nowrap;
- justify-content: flex-start;
-} inutile meglio agire di margin e media*/
 
 .item{
 width:calc(100% / 6 - 20px);
@@ -282,24 +269,23 @@ footer{
   height:90px;
   width:100vw;
   max-width:100%;
-  padding:10px;
   background-color: #282828;
 }
 
 .footer-left img{
-height:50px;
-width:50px;
+  height:50px;
+  width:50px;
 }
 .footer-left {
   align-items:center;
-  width:230px;
 }
-
-.footer-left div  {
-padding-left: 10px;
+.footer-left,.footer-right{
+  width:230px;}
+.footer-right{
+ justify-content: flex-end;
 }
 .footer-left .fa-folder-o  {
-padding-left: 5px;
+  padding-left: 5px;
 }
 .footer-left .nowplaying a:hover{
   text-decoration: underline;
@@ -342,10 +328,7 @@ display:none;
 
 footer .bar{
   justify-content: center;
-  width:80%;
-}
-footer .play i{
-  padding:0 10px;
+  width:60%;
 }
 
 .play .fa-2x:hover{transform: scale(1.5);
@@ -371,19 +354,6 @@ footer .shuffle:hover .green-bar{
 }
 
 footer .play,.footer-right{align-items: center;}
-
-
-.footer-right{
-    width:230px;
-  justify-content: flex-end;
-
-}
-.footer-right i{
-padding-right: 10px;
-}
-.footer-right .fa-circle{
-padding-right: 0;
-}
 
 /* fine codice lg */
 

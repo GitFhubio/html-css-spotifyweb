@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="description" content="Primo esercizio con flex">
   <link rel="stylesheet" href="css/style.css">
+</style>
 </head>
 <body>
   <!-- inizio wrapper contenente tutto footer compreso -->
@@ -21,37 +22,37 @@
       <div class="sidebar-content">
         <div class="sidebar-up flex">
           <div class="logo-spotify">
-            <img src="img/favicon.ico" alt=""><span class="spotify">Spotify</span><span class="copy">®</span>
+            <img src="img/favicon.ico" alt=""><span class="spotify p10-left">Spotify</span><span class="copy">®</span>
           </div>
           <div class="menu">
             <ul>
-              <li><a:active href=""><img src="img/home.svg" alt=""><span>Home</span></a></li>
-              <li><a href=""><img src="img/search.svg" alt=""></i><span>Cerca</span></a></li>
-              <li><a href=""><img src="img/libreria.svg" alt=""><span>La tua libreria</span></a></li>
+              <li class="p5-bottom"><a:active href=""><img src="img/home.svg" alt=""><span class="p10-left">Home</span></a></li>
+              <li class="p5-bottom"><a href=""><img src="img/search.svg" alt=""></i><span class="p10-left">Cerca</span></a></li>
+              <li class="p10-bottom"><a href=""><img src="img/libreria.svg" alt=""><span class="p10-left">La tua libreria</span></a></li>
             </ul>
           </div>
           <div class="playlist">
-          <p>playlist</p>
-          <a href=""><div><i class="fa fa-plus" aria-hidden="true" ></i></div><span>Crea Playlist</span></a>
+          <p class="p10-bottom">playlist</p>
+          <a href=""><div>+</div><span class="p10-left">Crea Playlist</span></a>
         </div>
           <div class="playlists">
             <ul>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
+              <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+              <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+              <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+              <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+              <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+              <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
             </ul>
           </div>
         </div>
         <div class="sidebar-down">
-          <div class="installapp">
-            <a href=""><img src="img/download.svg" alt=""><span>Install app</span></a>
+          <div class="installapp p10-top p10-bottom">
+            <a href=""><img src="img/download1.svg" alt=""><span class="p10-left">Install app</span></a>
           </div>
-          <div class="user">
+          <div class="user p10-top p10-bottom">
             <img src="img/profile.svg" alt="">
-          <a:active href=""><span>John Doe</span></a>
+          <a:active href=""><span class="p10-left">John Doe</span></a>
           </div>
         </div>
       </div>
@@ -62,8 +63,8 @@
       <div class="call-to-action">
         <a href="" class="button">Effettua l'upgrade</a>
       </div>
-      <div class="main-content">
-        <div class="nav">
+      <div class="main-content p10">
+        <div class="nav p10-top p10-bottom">
           <ul>
             <li><a class="underline" href="">In evidenza</a></li>
             <li><a class="underline" href="">Podcast</a></li>
@@ -74,7 +75,7 @@
           </ul>
         </div>
         <section>
-          <h1>Recently played</h1>
+          <h1 class="p10-left p10-bottom">Recently played</h1>
           <div class="recently flex">
             <div class="item">
               <div class="cover">
@@ -127,7 +128,7 @@
           </div>
         </section>
         <section>
-          <h1>Creato per John Doe</h1>
+          <h1 class="p10-left p10-bottom">Creato per John Doe</h1>
           <span>Più ascolti,più accurati saranno i suggerimenti.</span>
           <div class="recommended flex">
             <div class="item">
@@ -147,7 +148,7 @@
           </div>
         </section>
         <section>
-          <h1>Artisti più popolari</h1>
+          <h1 class="p10-left p10-bottom">Artisti più popolari</h1>
           <span>Più ascolti,più accurati saranno i suggerimenti.</span>
           <div class="popular flex">
             <div class="item">
@@ -166,27 +167,27 @@
     </div>
   </main>
     <!-- inizio footer -->
-    <footer class="flex">
+    <footer class="p10 flex">
       <div class="footer-left flex">
         <a href="#">
           <img src="img/sinister.jpeg" alt="">
         </a>
-        <div class="nowplaying">
+        <div class="nowplaying p10-left">
           <p>Sinister</p>
           <a href="#">Brano nome</a>
         </div>
-        <div class="heartfolder flex">
+        <div class="heartfolder flex p10-left">
         <a href=""><i class="fa fa-heart-o"></i></a>
         <a href=""><i class="fa fa-folder-o"></i></a>
       </div>
       </div>
       <div class="footer-center flex">
         <div class="play flex">
-          <i class="fa fa-random"></i>
-          <i class="fa fa-step-backward"></i>
-        <i class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-step-forward"></i>
-          <i class="fa fa-repeat"></i>
+          <i class="fa fa-random p10-left p10-right"></i>
+          <i class="fa fa-step-backward p10-left p10-right"></i>
+        <i class="fa fa-play-circle-o fa-2x p10-left p10-right" aria-hidden="true"></i>
+          <i class="fa fa-step-forward p10-left p10-right"></i>
+          <i class="fa fa-repeat p10-left p10-right"></i>
         </div>
         <div class="bar flex">
           <div class="number">
@@ -203,9 +204,9 @@
         </div>
       </div>
       <div class="footer-right flex">
-        <i class="fa fa-server"></i>
-        <i class="fa fa-desktop"></i>
-        <i class="fa fa-volume-up"></i>
+        <i class="fa fa-server p10-right"></i>
+        <i class="fa fa-desktop p10-right"></i>
+        <i class="fa fa-volume-up p10-right"></i>
         <div class="shuffle">
           <div class="green-bar">
            <i class="fa fa-circle" aria-hidden="true"></i>
