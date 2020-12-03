@@ -8,7 +8,7 @@
 body {
   font-family: 'Montserrat', sans-serif;}
 .fa{
-  font-weight: 900;
+  font-weight: 500;
 }
 h1{
   padding-bottom:10px;
@@ -97,6 +97,8 @@ padding-right: 15px;
 .sidebar span{
   padding-left: 10px;
 }
+.sidebar .menu{font-size: 13px;
+}
 .logo-spotify,.menu,.playlist{
   padding-top: 10px;
 }
@@ -114,16 +116,47 @@ padding-right: 15px;
   span.spotify{
     font-size: 22px;
   }
+
 .playlists{
   overflow-y: auto;
+  font-size: 13px;
+}
+.playlist div{
+  vertical-align: middle;
+  display:inline-block;
+  width:35px;
+  text-align: center;
+  line-height: 35px;
+  height:35px;
+ background-color: #fff;
+}
+
+.playlist div i{
+  color:#000;
+  font-weight: 100;
 }
 .sidebar-down{
 height:80px;
 }
-.playlist i{font-size: 35px;}
-.playlist i,.playlist span{
+.menu img{
+  margin-bottom: 5px;
+  width:20px;
+  height:auto;
   vertical-align: middle;
 }
+.sidebar-down img{
+margin-bottom: 3px;
+width:20px;
+height:auto;
+vertical-align: middle;
+}
+
+
+.user img{
+  background-color:#808080;
+  border-radius:999em;
+}
+
  .sidebar ul li{
   padding-top:5px;
   padding-bottom: 5px;
@@ -134,7 +167,8 @@ height:80px;
   padding-bottom: 10px;
 }
 .installapp{border-bottom:1px solid #ccc;
-padding:10px 0;}
+padding:10px 0;
+font-size:13px; }
 .user{
 padding:10px 0;}
 .user i{
@@ -304,14 +338,14 @@ footer .playing{
 footer .green-bar{
   position:absolute;
   height:3px;
-  background-color: lightgreen;
+  background-color: #fff;
   width:20%;
   text-align: right;
-  display:none;
 }
 footer .green-bar i{
 top:50%;
 transform:translate(0,-50%);
+display:none;
 }
 
 footer .bar{
@@ -322,7 +356,12 @@ footer .play i{
   padding:0 10px;
 }
 
+.play .fa-2x:hover{transform: scale(1.5);
+}
 footer .bar:hover .green-bar,footer .shuffle:hover .green-bar{
+  background-color: lightgreen;
+}
+footer .bar:hover .green-bar .fa-circle,footer .shuffle:hover .green-bar .fa-circle{
   display:block;
 }
 
