@@ -17,9 +17,8 @@ ul{list-style: none;}
 
 a{text-decoration:none;
     color:#fff;
-    opacity:0.5;
 }
-.cover span{ opacity:0.5;}
+.cover span, a{ opacity:0.5;}
 a:hover {
     opacity:1;
 }
@@ -291,36 +290,56 @@ justify-content: center;
 align-items:center;
 width:100%;
 }
-footer .number{width:40px;
-text-align: center}
+footer .number{width:5%;
+text-align: center;}
+footer .playing{
+  position:relative;
+  width:90%;
+  margin-top: 10px;
+  height:3px;
+  background-color:#ccc;
+}
+footer .green-bar{
+  position:absolute;
+  height:3px;
+  background-color: lightgreen;
+  width:20%;
+  text-align: right;
+  display:none;
+}
+footer .green-bar i{
+top:50%;
+transform:translate(0,-50%);
+}
+
 footer .bar{
   justify-content: center;
-  width:100%;
+  width:80%;
 }
 footer .play i{
   padding:0 10px;
 }
+
+footer .bar:hover .green-bar,footer .shuffle:hover .green-bar{
+  display:block;
+}
+
+footer .shuffle{
+  position:relative;
+  width:60%;
+  height:3px;
+  background-color: #ccc;
+}
+footer .shuffle .green-bar{
+  width:40%;
+}
+footer .shuffle:hover .green-bar{
+  display:block;
+}
+
 footer .play,.footer-right{align-items: center;}
 
-footer .sound:before,footer .sound:after,footer .playing:before,footer .playing:after{
-content:"";
-display:inline-block;
-position:relative;
-border-bottom: 3px solid #ccc;
-bottom:5px;
-}
-footer .playing:after{
-width:350px;
-}
-footer .playing:before{
-width:50px;
-}
-footer .sound:before{
-width:25px;
-}
-footer .sound:after{
-width:50px;
-}
+
 .footer-right{
     width:230px;
   justify-content: flex-end;
@@ -332,10 +351,7 @@ padding-right: 10px;
 .footer-right .fa-circle{
 padding-right: 0;
 }
-.playing i,.sound i{display:none;}
-.bar:hover .playing i,.shuffle:hover .sound i{display:inline-block;}
-.bar:hover .playing:before,.shuffle:hover .sound:before
-{border-color: lightgreen;}
+
 /* fine codice */
 
 
