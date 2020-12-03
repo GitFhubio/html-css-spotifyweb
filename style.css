@@ -1,0 +1,376 @@
+/* reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* body font-family */
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;}
+.fa{
+  font-weight: 900;
+}
+
+ul{list-style: none;}
+
+a{text-decoration:none;
+    color:#fff;
+    opacity:0.5;
+}
+.cover span{ opacity:0.5;}
+a:hover {
+    opacity:1;
+}
+/* h1,h2,h3,h4,h5,p{color:#000;
+padding-bottom:30px;
+} */
+
+/* classi font */
+.big-text{font-size:70px;}
+.med-text{font-size:40px;}
+.normal-text{font-size:20px;}
+.small-text{font-size:14px;}
+
+/* classi padding */
+.p50-top{padding-top: 50px;}
+.p50-bottom{padding-bottom: 50px;}
+
+.w100,.col-12{
+  width:100%;}
+
+.clearfix::after{
+  clear:both;
+  display:table;
+  content:"";
+  }
+
+.fl{float:left;}
+.fr{float:right;}
+.col-2{width:16.666%;}
+.col-3{width:25%;}
+.col-4{width:33.333%;}
+.col-5{width:41.666%;}
+.col-6{width:50%;}
+.col-7{width:58.333%;}
+.col-8{width:66.666%;}
+.col-9{width:75%;}
+.col-10{width:83.333%;}
+[class*="col-"]{;}
+
+.button {
+  color: #fff;
+  height: 40px;
+  line-height: 90px;
+  width: 100px;
+  max-width: 100%;
+  font-weight: 700;
+  margin-right: 5px;
+  padding: 15px 30px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  border:1px solid #fff;
+  text-align: center;
+}
+.button:hover
+{  padding: 20px 35px;
+  margin-right: 0;
+}
+
+/* codice */
+
+.wrapper{
+  height:100vh;
+  width:100vw;
+  max-width: 100%;
+  background-color: red;
+}
+
+.sidebar{width:200px;
+height:calc(100% - 90px);
+background-color:#000;
+color:#fff;
+padding-left: 15px;
+padding-right: 15px;
+}
+.sidebar-container{
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.sidebar span{
+  padding-left: 10px;
+}
+.logo-spotify,.menu,.playlist{
+  padding-top: 10px;
+}
+.logo-spotify img{filter: invert(100%);
+  vertical-align: text-bottom;
+}
+.copy{
+  position:relative;
+  bottom:10px;
+  right:5px;
+  font-size: 10px;
+}
+.logo-spotify a{
+  color:#fff;}
+  span.spotify{
+    font-size: 22px;
+  }
+.playlists{
+  height:30%;
+  overflow-y: auto;
+}
+.playlist i{font-size: 35px;}
+.playlist i,.playlist span{
+  vertical-align: middle;
+}
+.sidebar ul li{
+  line-height: 3;
+}
+.playlist p:first-child{
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.installapp{border-bottom:1px solid #ccc;
+padding:10px 0;}
+.user{
+padding:10px 0;}
+.user i{
+font-size: 24px;}
+
+.main-container{
+  background-color: #141822;
+  overflow:hidden;
+  width:calc(100% - 200px);
+  height:calc(100% - 90px);
+}
+.upgrade{
+  background-color: #080b12;
+  text-align: right;
+  width:calc(100vw - 200px);
+  position:fixed;
+  height:90px;
+  top:0;
+  right:0;
+  z-index:1;
+}
+.main-content{
+  overflow-y:auto;
+  margin-top:90px;
+  width:100%;
+  padding:10px;
+  color:#fff;
+  height:100%;
+}
+.nav{
+  text-transform:uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+.nav ul li{
+  display:inline-block;
+  line-height:4;
+  padding:0 5px;
+}
+.recently{
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.recommended, .popular{
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.recently .cover,.recommended .cover,.popular .cover{
+  width:100px;
+}
+.recently img,.recommended img,.popular img{
+  width:100%;
+  height:auto;
+}
+.immagine{
+  position:relative;
+}
+.immagine i{
+  transform: translate(-50%,-50%);
+  position:absolute;
+  left:50%;
+  top:50%;
+}
+.cover{
+  margin:10px;
+}
+.cover .overlay {opacity:0;
+height:100%;
+width:100%;}
+
+.cover:hover .overlay {opacity:1;}
+.cover:hover img {filter:opacity(30%);}
+.popular img{
+border-radius: 50%;
+}
+.layover{
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+footer{
+  color:#fff;
+  display:flex;
+  justify-content: space-between;
+  height:90px;
+  width:100vw;
+  padding:10px;
+  background-color: #282828;
+}
+.flex,.footer-center .play,.footer-center .bar{
+  display:flex;
+}
+.footer-left img{
+height:50px;
+width:50px;
+}
+.footer-left {
+  align-items:center;
+}
+
+.footer-left div  {
+padding-left: 5px;
+}
+.footer-left .fa-folder-o  {
+padding-left: 5px;
+}
+.footer-left .branonome:hover{
+  text-decoration: underline;
+}
+.footer-center{flex-direction:column;
+justify-content: center;
+align-items:center;
+}
+
+footer .play i{
+  padding:0 10px;
+}
+footer .play,.footer-right{align-items: center;}
+footer .playing:after{
+content:"";
+display:inline-block;
+position:relative;
+border-bottom: 3px solid #ccc;
+width:180px;
+bottom:5px;
+}
+footer .playing:before{
+content:"";
+display:inline-block;
+position:relative;
+border-bottom: 3px solid #ccc;
+width:50px;
+bottom:5px;
+}
+
+footer .sound:before{
+content:"";
+display:inline-block;
+position:relative;
+border-bottom: 3px solid #ccc;
+width:25px;
+bottom:5px;
+}
+footer .sound:after{
+content:"";
+display:inline-block;
+position:relative;
+border-bottom: 3px solid #ccc;
+width:50px;
+bottom:5px;
+}
+.footer-right{
+  justify-content: flex-end;
+
+}
+.footer-right i{
+padding-right: 10px;
+}
+.footer-right .fa-circle{
+padding-right: 0;
+}
+.playing i,.sound i{display:none;}
+.bar:hover .playing i,.shuffle:hover .sound i{display:inline-block;}
+.bar:hover .playing:before,.shuffle:hover .sound:before
+{border-color: lightgreen;}
+/* fine codice */
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .recently{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  footer .playing:after{
+  width:90px;
+
+  }
+  footer .playing:before{
+  width:25px;
+  }
+
+  footer .sound:before{
+
+  width:12.5px;
+
+  }
+  footer .sound:after{
+  width:25px;
+
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .main-container{
+    width:calc(100% - 50px);}
+    .sidebar{width:50px;
+    padding-left:5px;
+    padding-right:5px;
+    }
+    .recently .cover,.recommended .cover,.popular .cover{
+      width:150px;
+    }
+    .recently img,.recommended img,.popular img{
+      width:100%;
+      height:150px;
+    }
+    .recently,.recommended, .popular{
+      justify-content:space-around;
+      align-content: center;
+    }
+
+  .sidebar span , .sidebar .playlists, .sidebar .playlist{
+    display:none;
+  }
+  .sidebar{text-align: center;
+  }
+  .upgrade{
+    width:calc(100% - 50px);
+  }
+  .footer-left .heartfolder{
+    flex-direction: column;
+  }
+  .footer-left .fa-folder-o  {
+  padding-left:0;
+  }
