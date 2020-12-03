@@ -156,27 +156,51 @@ font-size: 24px;}
   width:100%;
 }
 .nav{
+  height:90px;
   text-transform:uppercase;
   font-weight: 700;
   text-align: center;
 }
 .nav ul li{
   display:inline-block;
-  line-height:4;
   padding:0 5px;
+  height:40px;
+}
+
+.underline:after{
+content:"";
+position:relative;
+width:30%;
+height:2px;
+background:#ADFF2E;
+display:none;
+left:33%;
+}
+.nav ul li:hover .underline:after{
+display:block;
 }
 .recently{
   display:flex;
-  /* flex-wrap: nowrap;
-  justify-content: space-between; */
+  flex-wrap: wrap;
 }
 .recommended, .popular{
   display:flex;
-  /* flex-wrap: nowrap;
-  justify-content: flex-start; */
+  /* flex-wrap: nowrap; */
+  /* justify-content: flex-start; */
 }
-.recently .cover,.recommended .cover,.popular .cover{
-  width:150px;
+.cover{
+width:calc(100% / 6 - 20px);
+}
+
+.cover{
+  margin:20px 10px;
+  text-align: center;
+}
+.cover p{
+  font-size: 12px;
+}
+.cover span{
+  font-size: 10px;
 }
 .recently img,.recommended img,.popular img{
   width:100%;
@@ -191,9 +215,7 @@ font-size: 24px;}
   left:50%;
   top:50%;
 }
-.cover{
-  margin:10px;
-}
+
 .cover .overlay {opacity:0;
 height:100%;
 width:100%;}
@@ -287,15 +309,17 @@ padding-right: 0;
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-  .recently{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: flex-start;
-  }
+
+   .cover{
+    width:calc(100% / 4 - 20px);
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+   .cover{
+    width:calc(100% / 2 - 20px);
+}
   footer .playing:after{
   width:90px;
 
@@ -324,18 +348,7 @@ padding-right: 0;
     padding-left:5px;
     padding-right:5px;
     }
-    .recently .cover,.recommended .cover,.popular .cover{
-      width:150px;
-    }
-    .recently img,.recommended img,.popular img{
-      width:100%;
-      height:150px;
-    }
-    .recently,.recommended, .popular{
-      justify-content:space-around;
-      align-content: center;
-    }
-
+    
   .sidebar span , .sidebar .playlists, .sidebar .playlist{
     display:none;
   }
