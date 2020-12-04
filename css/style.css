@@ -16,13 +16,13 @@ a{text-decoration:none;
     color:#fff;
 }
 .underline:after{
-content:"";
-position:relative;
-width:30%;
-height:2px;
-background:#ADFF2E;
-display:none;
-left:33.33%;
+  content:"";
+  position:relative;
+  width:30%;
+  height:2px;
+  background:#ADFF2E;
+  display:none;
+  left:33.33%;
 }
 .flex{display:flex;}
 
@@ -169,15 +169,15 @@ height:80px;
   border-left-style: solid;
 }
 .sidebar-down img{
-margin-bottom: 3px;
-width:20px;
-height:auto;
-vertical-align: middle;
+  margin-bottom: 3px;
+  width:20px;
+  height:auto;
+  vertical-align: middle;
 }
 
 .installapp img{filter: invert(100%);
-width:12px;
-height:auto;
+  width:12px;
+  height:auto;
 }
 
 .user img{
@@ -429,8 +429,8 @@ footer .number{width:10%;
   display:none;
 }
 .menu li:first-child div{
- margin-left:-5px;
- padding-left: 0px;
+  margin-left:-5px;
+  padding-left: 0px;
 }
 
 .sidebar{text-align: center;
@@ -443,10 +443,10 @@ footer .number{width:10%;
   flex-direction: column;
 }
 .footer-left .fa-folder-o,.footer-left .heartfolder{
-padding-left:0;
+  padding-left:0;
 }
 .footer-left .nowplaying{
-margin-right:0;
+  margin-right:0;
 
 }
 }
@@ -456,5 +456,9 @@ margin-right:0;
 }
 .call-to-action{
   opacity:0.6;
+  width:100%;
+}
+.sidebar{
+  display:none;
 }
 }
