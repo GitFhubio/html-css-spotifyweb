@@ -412,6 +412,7 @@ footer .number{width:10%;
 }
 .logo-spotify img:first-child{filter: invert(100%);
  display:block;
+ width:60%;
  margin:0 auto;
 }
 .menu li:first-child div{
