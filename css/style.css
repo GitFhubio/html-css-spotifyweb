@@ -433,6 +433,11 @@ footer .number{width:10%;
 .sidebar span , .sidebar .playlists, .sidebar .playlist{
   display:none;
 }
+.menu li:first-child div{
+margin-left:-5px;
+padding-left: 0px;
+}
+
 .sidebar{text-align: center;
 }
 .call-to-action{
