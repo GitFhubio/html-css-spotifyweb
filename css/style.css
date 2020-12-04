@@ -447,3 +447,11 @@ padding-left:0;
 margin-right:0;
 
 }
+}
+/* media speciale inserita per l'altezza(voluta da ottavio) */
+@media only screen and (max-height : 90px){
+.button{ display:none;
+}
+.call-to-action{
+  opacity:0.6;
+}
