@@ -69,6 +69,7 @@ a:hover,a.active, .user a{
 }
 .button:hover{ padding: 20px 35px;
   margin-right: 0;
+  font-size: 18px;
 }
 /* codice */
 
@@ -352,7 +353,6 @@ footer .bar{
   justify-content: center;
   width:60%;
 }
-
 .play .fa-2x:hover{transform: scale(1.5);
 }
 footer .bar:hover .elapsed-time,footer .shuffle:hover .elapsed-time{
