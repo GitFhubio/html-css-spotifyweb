@@ -26,9 +26,7 @@ left:33.33%;
 }
 .flex{display:flex;}
 
-section>span{padding-left: 10px;
-}
-.item span, a , section>span{ opacity:0.5;
+.item span, a , .categoria span{ opacity:0.5;
 }
 
 a:hover {
