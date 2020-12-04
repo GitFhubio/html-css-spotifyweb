@@ -29,7 +29,7 @@ left:33.33%;
 .item span, a , .categoria span{ opacity:0.5;
 }
 
-a:hover {
+a:hover,a.active, .user a{
     opacity:1;
 }
 
