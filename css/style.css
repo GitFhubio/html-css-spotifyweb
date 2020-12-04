@@ -79,11 +79,6 @@ a:hover,a.active, .user a,.button{
   text-align: center;
 }
 
-/* .button:hover{ padding: 20px 35px;
-  margin-right: 0;
-  font-size: 18px;
-} */
-
 .button:hover{
   transform: scale(1.1);
 }
