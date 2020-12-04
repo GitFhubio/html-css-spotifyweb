@@ -4,7 +4,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 /* body font-family */
 body {
   font-family: 'Montserrat', sans-serif;
@@ -25,25 +24,22 @@ a{text-decoration:none;
   left:33.33%;
 }
 .flex{display:flex;}
-
 .item span, a , .categoria span{ opacity:0.5;
 }
-
 a:hover,a.active, .user a,.button{
     opacity:1;
 }
-
 /* classi font */
-
-.med-text{font-size:40px;}
-.normal-text{font-size:20px;}
-.small-text{font-size:14px;}
+.normal-text{font-size:13px;}
+.small-text{font-size:10px;}
 
 /* classi padding */
 .p10-left{padding-left: 10px;}
 .p10-bottom{padding-bottom: 10px;}
 .p10-right{padding-right: 10px;}
 .p10-top{padding-top: 10px;}
+.p5-left{padding-left: 10px;}
+.p5-right{padding-right: 5px;}
 .p5-bottom{padding-bottom: 5px;}
 .p5-top{padding-top: 5px;}
 .p10{padding:10px;}
@@ -69,7 +65,7 @@ a:hover,a.active, .user a,.button{
   height: 45px;
   line-height: 45px;
   width: 250px;
-  max-width: 100%;
+  max-width: 70%;
   font-weight: 700;
   margin-right: 25px;
   border-radius: 40px;
@@ -104,7 +100,6 @@ background-color:#000;
 padding-left: 15px;
 padding-right: 15px;
 }
-
 .sidebar-content{
   height:100%;
   display:flex;
@@ -117,31 +112,27 @@ padding-right: 15px;
   flex-direction: column;
   height:calc(100% - 80px);
 }
-.sidebar .menu{font-size: 13px;
-}
-.logo-spotify,.menu,.playlist{
+.menu,.createplaylist{
   padding-top: 10px;
 }
-.logo-spotify img{filter: invert(100%);
-  vertical-align: text-bottom;
-}
-.copy{
-  position:relative;
-  left:2px;
-  bottom:10px;
-  font-size: 10px;
+.logo-spotify img:first-child{filter: invert(100%);
+ display:none;
 }
 
+.logo-spotify img:last-child{
+margin:15px 0;
+width:70%;
+height:auto;
+}
 span.spotify{
   font-size: 22px;
+  font-weight: 600;
 }
 .playlists{
-  min-height: 40px;
+  min-height: 80px;
   overflow-y: auto;
-  font-size: 13px;
 }
-
-.playlist div{
+.createplaylist div{
   vertical-align: middle;
   display:inline-block;
   color:#000;
@@ -164,7 +155,6 @@ height:80px;
 .menu li:first-child div{
   border-left:3px;
   margin-left: -15px;
-  padding-left: 10px;
   border-left-color: lightgreen;
   border-left-style: solid;
 }
@@ -179,20 +169,18 @@ height:80px;
   width:12px;
   height:auto;
 }
-
 .user img{
   background-color:#808080;
   border-radius:999em;
 }
-
-.playlist p:first-child{
+.createplaylist p:first-child{
   text-transform: uppercase;
   font-weight: 700;
 }
 .installapp{border-bottom:1px solid #ccc;
-font-size:13px; }
+}
 .user { font-weight: 600;
-font-size: 13px;}
+}
 
 /* fine aside */
 
@@ -216,7 +204,6 @@ font-size: 13px;}
 }
 .nav ul li{
   display:inline-block;
-  padding:0 5px;
   height:40px;
 }
 
@@ -279,7 +266,6 @@ footer{
   justify-content: space-between;
   height:90px;
   width:100%;
-  max-width:100%;
   background-color: #282828;
 }
 
@@ -295,9 +281,6 @@ footer{
   width:30%;}
 .footer-right{
  justify-content: flex-end;
-}
-.footer-left .fa-folder-o  {
-  padding-left: 10px;
 }
 .footer-left .nowplaying{
 margin-right:10px;
@@ -321,6 +304,7 @@ width:40%;
 }
 footer .number{width:10%;
   padding-top: 4px;
+  font-weight: 600;
   font-size: 10px;
 text-align: center;}
 footer .playing{
@@ -395,7 +379,6 @@ footer .play,.footer-right{align-items: center;}
 .item{
   width:calc(100% / 4 - 20px);
 }
-
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
@@ -403,7 +386,6 @@ footer .play,.footer-right{align-items: center;}
 .item{
   width:calc(100% / 2 - 20px);
 }
-
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px) {
@@ -425,20 +407,23 @@ footer .number{width:10%;
   padding-right:5px;
 }
 
-.sidebar span , .sidebar .playlists, .sidebar .playlist{
+.sidebar span , .sidebar .playlists, .sidebar .createplaylist,.logo-spotify img:last-child{
   display:none;
+}
+.logo-spotify img:first-child{filter: invert(100%);
+ display:block;
+ margin:0 auto;
 }
 .menu li:first-child div{
   margin-left:-5px;
   padding-left: 0px;
 }
-
 .sidebar{text-align: center;
 }
+
 .call-to-action{
   width:calc(100% - 50px);
 }
-
 .footer-left .heartfolder{
   flex-direction: column;
 }
@@ -447,7 +432,6 @@ footer .number{width:10%;
 }
 .footer-left .nowplaying{
   margin-right:0;
-
 }
 }
 /* media speciale inserita per l'altezza(voluta da ottavio) */
