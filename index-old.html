@@ -10,162 +10,170 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="description" content="Primo esercizio con flex">
   <link rel="stylesheet" href="css/style-old.css">
+</style>
 </head>
 <body>
   <!-- inizio wrapper contenente tutto footer compreso -->
   <div class="wrapper">
     <!-- inizio main che contiene tutto tranne footer -->
-  <main>
-    <!-- inizio sidebar  -->
-    <div class="sidebar fl">
-      <div class="sidebar-content">
-        <div class="sidebar-up flex">
-          <div class="logo-spotify">
-            <a href="#"><img src="img/favicon.ico" alt=""><span class="spotify">Spotify</span><span class="copy">®</span></a>
+    <main>
+      <!-- inizio sidebar  -->
+      <div class="sidebar fl">
+        <div class="sidebar-content">
+          <div class="sidebar-up flex">
+            <div class="logo-spotify">
+              <img src="img/favicon.ico" alt=""><span class="spotify p10-left">Spotify</span><span class="copy">®</span>
+            </div>
+            <div class="menu">
+              <ul>
+                <li class="p5-bottom"><div><a class="active" href=""><img src="img/home.svg" alt=""><span class="p10-left">Home</span></a></div></li>
+                <li class="p5-bottom"><a href=""><img src="img/search.svg" alt=""></i><span class="p10-left">Cerca</span></a></li>
+                <li class="p10-bottom"><a href=""><img src="img/libreria.svg" alt=""><span class="p10-left">La tua libreria</span></a></li>
+              </ul>
+            </div>
+            <div class="playlist">
+              <p class="p10-bottom">playlist</p>
+              <a href=""><div>+</div><span class="p10-left">Crea Playlist</span></a>
+            </div>
+            <div class="playlists">
+              <ul>
+                <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+                <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+                <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+                <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+                <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+                <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="menu">
+          <div class="sidebar-down">
+            <div class="installapp p10-top p10-bottom">
+              <a href=""><img src="img/download1.svg" alt=""><span class="p10-left">Install app</span></a>
+            </div>
+            <div class="user p10-top p10-bottom">
+              <a href=""><img src="img/profile.svg" alt=""></a>
+              <span class="p10-left">John Doe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fine sidebar -->
+      <!-- inizio main container -->
+      <div class="content fl">
+        <div class="call-to-action">
+          <a href="" class="button">Effettua l'upgrade</a>
+        </div>
+        <div class="main-content p10">
+          <div class="nav p10-top p10-bottom">
             <ul>
-              <li><a href=""><i class="fa fa-home"></i><span>Home</span></a></li>
-              <li><a href=""><i class="fa fa-search"></i><span>Cerca</span></a></li>
-              <li><a href=""><i class="fa fa-folder"></i><span>La tua libreria</span></a></li>
+              <li><a class="underline" href="">In evidenza</a></li>
+              <li><a class="underline" href="">Podcast</a></li>
+              <li><a class="underline" href="">Classifiche</a></li>
+              <li><a class="underline" href="">Generi e Mood</a></li>
+              <li><a class="underline" href="">Nuove uscite</a></li>
+              <li><a class="underline" href="">Scopri</a></li>
             </ul>
           </div>
-          <div class="playlist">
-          <p>playlist</p>
-          <p><a href=""><i class="fa fa-plus-square" aria-hidden="true"></i><span>Crea Playlist</span></a></p>
+          <section>
+            <div class="categoria p10-left">
+              <h1 class=" p10-bottom">Recently played</h1>
+            </div>
+            <div class="recently flex">
+              <div class="item">
+                <div class="cover">
+                  <img src="img/metal_lifting.jpg" alt="">
+                  <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
+                </div>
+                <p>Heavy Metal</p>
+                <span>Subtitle</span>
+              </div>
+              <div class="item">
+                <div class="cover">
+                  <img src="img/stranger.jpeg" alt="">
+                  <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
+                </div>
+                <p>Stranger Things,Vol.1(a Netflix Original Series Soundtrack)</p>
+                <span>Kyle Dixon & Michael Stein</span>
+              </div>
+              <div class="item">
+                <div class="cover">
+                  <img src="img/aquietplace.jpeg" alt="">
+                  <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
+                </div>
+                <p>A quiet place</p>
+                <span>Subtitle</span>
+              </div>
+              <div class="item">
+                <div class="cover">
+                  <img src="img/split.jpeg" alt="">
+                  <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
+                </div>
+                <p>Split</p>
+                <span>Subtitle</span>
+              </div>
+              <div class="item">
+                <div class="cover">
+                  <img src="img/cure.jpeg" alt="">
+                  <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
+                </div>
+                <p>A cure for wellness</p>
+                <span>Subtitle</span>
+              </div>
+              <div class="item">
+                <div class="cover">
+                  <img src="img/sinister.jpeg" alt="">
+                  <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
+                </div>
+                <p>Sinister</p>
+                <span>Subtitle</span>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="categoria p10-left">
+              <h1 class=" p10-bottom">Creato per John Doe</h1>
+              <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+            </div>
+            <div class="recommended flex">
+              <div class="item">
+                <div class="cover">
+                  <img src="img/radar.jpeg" alt="">
+                  <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
+                </div>
+                <p>Release Radar</p>
+              </div>
+              <div class="item">
+                <div class="cover">
+                  <img src="img/mixdaily.jpeg" alt="">
+                  <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
+                </div>
+                <p>Daily Mix 1</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="categoria p10-left">
+              <h1 class="p10-bottom">Artisti più popolari</h1>
+              <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+            </div>
+            <div class="popular flex">
+              <div class="item">
+                <img src="img/youg.jpeg" alt="">
+                <p>Youg</p>
+              </div>
+              <div class="item">
+                <img src="img/einaudi.jpeg" alt="">
+                <p>Einaudi</p>
+              </div>
+            </div>
+          </section>
+          <!-- fine main content -->
         </div>
-          <div class="playlists">
-            <ul>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="sidebar-down">
-          <div class="installapp">
-            <a href=""><i class="fa fa-arrow-circle-o-down"></i><span>Install app</span></a>
-          </div>
-          <div class="user">
-            <a href=""><i class="fa fa-user-o"></i><span>John Doe</span></a>
-          </div>
-        </div>
+        <!-- fine main container -->
       </div>
-    </div>
-    <!-- fine sidebar -->
-    <!-- inizio main container -->
-    <div class="content fl">
-      <div class="call-to-action">
-        <a href="" class="button">Effettua l'upgrade</a>
-      </div>
-      <div class="main-content">
-        <div class="nav">
-          <ul>
-            <li><a class="underline" href="">In evidenza</a></li>
-            <li><a class="underline" href="">Podcast</a></li>
-            <li><a class="underline" href="">Classifiche</a></li>
-            <li><a class="underline" href="">Generi e Mood</a></li>
-            <li><a class="underline" href="">Nuove uscite</a></li>
-            <li><a class="underline" href="">Scopri</a></li>
-          </ul>
-        </div>
-        <section>
-          <h1>Recently played</h1>
-          <div class="recently">
-            <div class="cover">
-              <div class="immagine">
-                <img src="img/metal_lifting.jpg" alt="">
-                <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
-              </div>
-              <p>Heavy Metal</p>
-              <span>Subtitle</span>
-            </div>
-            <div class="cover">
-              <div class="immagine">
-                <img src="img/stranger.jpeg" alt="">
-                <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
-              </div>
-              <p>Stranger Things,Vol.1(a Netflix Original Series Soundtrack)</p>
-              <span>Kyle Dixon & Michael Stein</span>
-            </div>
-            <div class="cover">
-              <div class="immagine">
-                <img src="img/aquietplace.jpeg" alt="">
-                <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
-              </div>
-              <p>A quiet place</p>
-              <span>Subtitle</span>
-            </div>
-            <div class="cover">
-              <div class="immagine">
-                <img src="img/split.jpeg" alt="">
-                <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
-              </div>
-              <p>Split</p>
-              <span>Subtitle</span>
-            </div>
-            <div class="cover">
-              <div class="immagine">
-                <img src="img/cure.jpeg" alt="">
-                <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
-              </div>
-              <p>A cure for wellness</p>
-              <span>Subtitle</span>
-            </div>
-            <div class="cover">
-              <div class="immagine">
-                <img src="img/sinister.jpeg" alt="">
-                <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
-              </div>
-              <p>Sinister</p>
-              <span>Subtitle</span>
-            </div>
-          </div>
-        </section>
-        <section>
-          <h1>Creato per John Doe</h1>
-          <span>Più ascolti,più accurati saranno i suggerimenti.</span>
-          <div class="recommended">
-            <div class="cover">
-              <div class="immagine">
-                <img src="img/radar.jpeg" alt="">
-                <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
-              </div>
-              <p>Release Radar</p>
-            </div>
-            <div class="cover">
-              <div class="immagine">
-                <img src="img/mixdaily.jpeg" alt="">
-                <div class="overlay"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></div>
-              </div>
-              <p>Daily Mix 1</p>
-            </div>
-          </div>
-        </section>
-        <section>
-          <h1>Artisti più popolari</h1>
-          <span>Più ascolti,più accurati saranno i suggerimenti.</span>
-          <div class="popular">
-            <div class="cover">
-              <img src="img/youg.jpeg" alt="">
-              <p>Youg</p>
-            </div>
-            <div class="cover">
-              <img src="img/einaudi.jpeg" alt="">
-              <p>Einaudi</p>
-            </div>
-          </div>
-        </section>
-        <!-- fine main content -->
-      </div>
-      <!-- fine main container -->
-    </div>
-  </main>
+    </main>
     <!-- inizio footer -->
-    <footer class="flex">
+    <footer class="p10 flex">
       <div class="footer-left flex">
         <a href="#">
           <img src="img/sinister.jpeg" alt="">
@@ -174,36 +182,42 @@
           <p>Sinister</p>
           <a href="#">Brano nome</a>
         </div>
-        <div class="heartfolder flex">
-        <a href=""><i class="fa fa-heart-o"></i></a>
-        <a href=""><i class="fa fa-folder-o"></i></a>
-      </div>
+        <div class="heartfolder flex p10-left">
+          <a href=""><i class="fa fa-heart-o"></i></a>
+          <a href=""><i class="fa fa-folder-o"></i></a>
+        </div>
       </div>
       <div class="footer-center flex">
-        <div class="play">
-          <a href=""><i class="fa fa-random"></i></a>
-          <a href=""><i class="fa fa-step-backward"></i></a>
-          <a href=""><i class="fa fa-pause-circle-o fa-2x"></i></a>
-          <a href=""><i class="fa fa-step-forward"></i></a>
-          <a href=""><i class="fa fa-repeat"></i></a>
+        <div class="play flex">
+          <i class="fa fa-random p10-left p10-right"></i>
+          <i class="fa fa-step-backward p10-left p10-right"></i>
+          <i class="fa fa-play-circle-o fa-2x p10-left p10-right" aria-hidden="true"></i>
+          <i class="fa fa-step-forward p10-left p10-right"></i>
+          <i class="fa fa-repeat p10-left p10-right"></i>
         </div>
         <div class="bar flex">
           <div class="number">
             0:25
           </div>
-          <span class="playing"><i class="fa fa-circle"></i></span>
+          <div class="playing">
+            <div class="elapsed-time perc-20">
+              <div class="point"></div>
+            </div>
+          </div>
           <div class="number">
             4:35
           </div>
         </div>
       </div>
       <div class="footer-right flex">
-        <i class="fa fa-server"></i>
-        <i class="fa fa-desktop"></i>
-        <i class="fa fa-volume-up"></i>
+        <i class="fa fa-server p10-right"></i>
+        <i class="fa fa-desktop p10-right"></i>
+        <i class="fa fa-volume-up p10-right"></i>
         <div class="shuffle">
-        <span class="sound"><i class="fa fa-circle"></i></span>
-      </div>
+          <div class="elapsed-time perc-30">
+            <div class="point"></div>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- chiusura footer -->

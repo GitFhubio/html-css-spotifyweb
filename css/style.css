@@ -29,7 +29,7 @@ left:33.33%;
 .item span, a , .categoria span{ opacity:0.5;
 }
 
-a:hover,a.active, .user a{
+a:hover,a.active, .user a,.button{
     opacity:1;
 }
 
@@ -54,22 +54,37 @@ a:hover,a.active, .user a{
 
 /* In questa struttura clearfix superfluo */
 
-.button {
-  height: 40px;
+.call-to-action{
+  background-color: #080b12;
+  opacity:0.9;
+  text-align: right;
+  width:calc(100% - 200px);
+  position:fixed;
+  height:90px;
   line-height: 90px;
-  width: 100px;
+  z-index:2;
+}
+.button {
+  display:inline-block;
+  height: 45px;
+  line-height: 45px;
+  width: 250px;
   max-width: 100%;
   font-weight: 700;
-  margin-right: 5px;
-  padding: 15px 30px;
+  margin-right: 25px;
   border-radius: 40px;
   text-transform: uppercase;
   border:1px solid #fff;
   text-align: center;
 }
-.button:hover{ padding: 20px 35px;
+
+/* .button:hover{ padding: 20px 35px;
   margin-right: 0;
   font-size: 18px;
+} */
+
+.button:hover{
+  transform: scale(1.1);
 }
 /* codice */
 
@@ -184,15 +199,6 @@ font-size: 24px;}
 
 /* fine aside */
 
-.call-to-action{
-  background-color: #080b12;
-  opacity:0.9;
-  text-align: right;
-  width:calc(100% - 200px);
-  position:fixed;
-  height:90px;
-  z-index:2;
-}
 .content{
   overflow-y:auto;
   width:calc(100% - 200px);
@@ -206,6 +212,7 @@ font-size: 24px;}
 /* nav spotify */
 
 .nav{
+
   text-transform:uppercase;
   font-weight: 700;
   text-align: center;
@@ -298,12 +305,14 @@ footer{
 .footer-left .nowplaying{
 margin-right:10px;
 width:80px;
+line-height: 70%;
 }
 .footer-left .nowplaying a:hover{
   text-decoration: underline;
 }
 .footer-left .nowplaying p{
 font-size:0.7em;
+font-weight: 600;
 }
 .footer-left .nowplaying a{
 font-size: 0.6em;
