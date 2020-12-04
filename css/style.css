@@ -9,6 +9,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color:#fff;
+  overflow: hidden;
 }
 ul{list-style: none;}
 
@@ -434,8 +435,8 @@ footer .number{width:10%;
   display:none;
 }
 .menu li:first-child div{
-margin-left:-5px;
-padding-left: 0px;
+ margin-left:-5px;
+ padding-left: 0px;
 }
 
 .sidebar{text-align: center;
