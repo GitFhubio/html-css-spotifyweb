@@ -23,18 +23,13 @@ a{text-decoration:none;
   left:33.33%;
 }
 .flex{display:flex;}
-a:hover, .user a,.button{opacity:1;}
-.item span , .categoria span, a { opacity:0.5;
+a:hover, .user a,.button,.sidebar li:hover,.sidebar li.active:hover{opacity:1;}
+.item span , .categoria span, a ,.sidebar li { opacity:0.5;
 }
-.sidebar li{opacity:0.5;}
-.sidebar li:hover{opacity:1;}
-footer i:hover,.sidebar li:hover,.item:hover{
+.sidebar li:hover,.sidebar li.active:hover,.item:hover,footer i:hover{
   cursor:pointer;
 }
-.addplaylist{opacity:1;}
 .sidebar li.active{opacity:0.8;}
-.sidebar li.active:hover{opacity:1;
-cursor: pointer;}
 /* classi font */
 .normal-text{font-size:13px;}
 .small-text{font-size:10px;}
