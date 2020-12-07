@@ -23,13 +23,14 @@ a{text-decoration:none;
   left:33.33%;
 }
 .flex{display:flex;}
-a:hover, .user a,.button,.sidebar li:hover,.sidebar li.active:hover{opacity:1;}
 .item span , .categoria span, a ,.sidebar li { opacity:0.5;
 }
-.sidebar li:hover,.sidebar li.active:hover,.item:hover,footer i:hover{
+a:hover,.button,.sidebar li:hover,.user a {opacity:1;}
+.sidebar .active{opacity:0.8;}
+.sidebar li:hover,.item:hover,footer i:hover,.shuffle:hover,.playing:hover{
   cursor:pointer;
 }
-.sidebar li.active{opacity:0.8;}
+
 /* classi font */
 .normal-text{font-size:13px;}
 .small-text{font-size:10px;}
@@ -109,6 +110,7 @@ span.spotify{
   line-height:35px;
   height: 35px;
   background-color: #fff;
+  border-radius: 1px;
 }
 .menu img{
   width:20px;
@@ -129,9 +131,11 @@ span.spotify{
   background-color:#808080;
   border-radius:999em;
 }
-.createplaylist p:first-child{
+.createplaylist li:first-child{
+  opacity:1;
   text-transform: uppercase;
   font-weight: 700;
+  cursor:text;
 }
 .installapp{border-bottom:1px solid #ccc;
 }
