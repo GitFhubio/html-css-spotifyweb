@@ -116,11 +116,22 @@ span.spotify{
   width:20px;
   height:auto;
 }
-.menu li:first-child div{
-  border-left:3px;
-  margin-left: -15px;
-  border-left-color: lightgreen;
-  border-left-style: solid;
+.menu li{
+  margin-bottom: 10px;
+}
+.menu li:first-child{
+  position:relative;
+}
+.menu li:first-child:before{
+  content:"";
+  display:block;
+  position:absolute;
+  top:50%;
+  left:-15px;
+  transform: translate(0,-50%);
+  height:20px;
+  width:3px;
+  background-color: green;
 }
 .installapp img{filter: invert(100%);
   width:12px;
@@ -354,12 +365,15 @@ footer .play,.footer-right{align-items: center;}
   width:80%;
   min-width:20px;
 }
+.menu li:first-child:before{
+  left:-5px;}
 .content{
   width:calc(100% - 50px);}
 .sidebar{width:50px;
   padding-left:5px;
   padding-right:5px;
 }
+
 .sidebar span , .sidebar .playlists, .sidebar .createplaylist,.logo-spotify img:last-child{
   display:none;
 }
@@ -367,8 +381,6 @@ footer .play,.footer-right{align-items: center;}
   display:block;
   width:60%;
   margin:0 auto;
-}
-.sidebar-up{align-items:center;
 }
 .sidebar-down .flex, .sidebar-up .flex
 {justify-content:center;
