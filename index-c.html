@@ -9,7 +9,8 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="description" content="Primo esercizio con flex">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-c.css">
+</style>
 </head>
 <body>
   <!-- inizio wrapper contenente tutto footer compreso -->
@@ -23,33 +24,33 @@
             <div class="logo-spotify p10-top">
               <img src="img/favicon.ico" alt=""><img src="img/logo.svg" alt="">
             </div>
-            <div class="menu normal-text p10-top">
+            <div class="menu normal-text">
               <ul>
-                <li class="p5-bottom active"><div class="p10-left flex"><img src="img/home.svg" alt=""><span class="p10-left">Home</span></div></li>
-                <li class="p5-bottom"><div class="flex"><img src="img/search.svg" alt=""><span class="p10-left">Cerca</span></div></li>
-                <li class="p10-bottom"><div class="flex"><img src="img/libreria.svg" alt=""><span class="p10-left">La tua libreria</span></div></li>
+                <li class="p5-bottom"><div class="p10-left"><a class="active" href=""><img src="img/home.svg" alt=""><span class="p10-left">Home</span></a></div></li>
+                <li class="p5-bottom"><a href=""><img src="img/search.svg" alt=""></i><span class="p10-left">Cerca</span></a></li>
+                <li class="p10-bottom"><a href=""><img src="img/libreria.svg" alt=""><span class="p10-left">La tua libreria</span></a></li>
               </ul>
             </div>
-            <div class="createplaylist p10-top">
+            <div class="createplaylist">
               <p class="p10-bottom">playlist</p>
-              <a href=""><div class="flex"><div class="addplaylist">+</div><span class="p10-left">Crea Playlist</span></div></a>
+              <a href=""><div>+</div><span class="p10-left">Crea Playlist</span></a>
             </div>
             <div class="playlists normal-text">
               <ul>
-                <li class="p10-top p10-bottom">Nome Playlist</li>
-                <li class="p10-top p10-bottom">Nome Playlist</li>
-                <li class="p10-top p10-bottom">Nome Playlist</li>
-                <li class="p10-top p10-bottom">Nome Playlist</li>
-                <li class="p10-top p10-bottom">Nome Playlist</li>
-                <li class="p10-top p10-bottom">Nome Playlist</li>
+                <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+                <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+                <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+                <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+                <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
+                <li class="p10-top p10-bottom"><a href="">Nome Playlist</a></li>
               </ul>
             </div>
           </div>
           <div class="sidebar-down">
             <div class="installapp p10-top p10-bottom normal-text">
-              <a href=""><div class="flex"><img src="img/download1.svg" alt=""><span class="p10-left">Installa app</span></div></a>
+              <a href=""><img src="img/download1.svg" alt=""><span class="p10-left">Installa app</span></a>
             </div>
-            <div class="user p10-top p10-bottom normal-text flex">
+            <div class="user p10-top p10-bottom normal-text">
               <a href=""><img src="img/profile.svg" alt=""></a>
               <span class="p10-left">John Doe</span>
             </div>
@@ -187,13 +188,13 @@
         </div>
       </div>
       <div class="footer-center flex">
-        <ul class="play flex">
-          <li><i class="fa fa-random"></i></li>
-          <li><i class="fa fa-step-backward"></i></li>
-          <li><i class="fa fa-play-circle-o fa-2x"></i></li>
-          <li><i class="fa fa-step-forward"></i></li>
-          <li><i class="fa fa-repeat"></i></li>
-        </ul>
+        <div class="play flex">
+          <i class="fa fa-random p10-left p10-right"></i>
+          <i class="fa fa-step-backward p10-left p10-right"></i>
+          <i class="fa fa-play-circle-o fa-2x p10-left p10-right" aria-hidden="true"></i>
+          <i class="fa fa-step-forward p10-left p10-right"></i>
+          <i class="fa fa-repeat p10-left p10-right"></i>
+        </div>
         <div class="bar flex">
           <div class="number">
             0:25
@@ -209,7 +210,7 @@
         </div>
       </div>
       <div class="footer-right flex">
-        <i class="fa fa-server p10-right"></i>
+       <i class="fa fa-server p10-right"></i>
         <i class="fa fa-desktop p10-right"></i>
         <i class="fa fa-volume-up p10-right"></i>
         <div class="shuffle">
@@ -222,5 +223,6 @@
     <!-- chiusura footer -->
   </div>
   <!-- chiusura wrapper -->
+
 </body>
 </html>
