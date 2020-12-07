@@ -16,9 +16,9 @@ a{text-decoration:none;
 .underline:after{
   content:"";
   position:relative;
-  width:30%;
+  width:33.33%;
   height:2px;
-  background:#ADFF2E;
+  background-color:#84e91e;
   display:none;
   left:33.33%;
 }
@@ -129,9 +129,9 @@ span.spotify{
   top:50%;
   left:-15px;
   transform: translate(0,-50%);
-  height:20px;
+  height:26px;
   width:3px;
-  background-color: green;
+  background-color: #84e91e;
 }
 .installapp img{filter: invert(100%);
   width:12px;
