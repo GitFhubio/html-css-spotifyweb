@@ -439,3 +439,14 @@ footer .play  li{
 .nav ul li{
   height:20px;}
 }
+
+/* Q&A:
+1)Gli elementi flex hanno di base flex: 0(grow) 1(shrink) auto(basis)[look at my dim];
+nel footer avrei potuto mettere flex 30% 30% e 40%(o analogamente 0.75 0.75 e 1) al posto di width per f-right,left & center.
+Se avessi messo proporzioni diverse con flex lasciando i width questi ultimi sarebbero stati ignorati.
+2)Se avessi voluto fare l'hover per far uscire la barra verticale verde nella sidebar al passaggio su Cerca e La tua libreria
+sarebbe stato meglio costruire la barra come border left del div contenuto nei 3 li a cui dare opacity 0/1
+3)Se avessi costruito bottone senza dimensioni ma col padding a partire dal contenuto il transform scale per lo zoom non avrebbe funzionato
+perché lavora su dimensioni(in quel caso avrei dovuto fare lo zoom "a mano" cambiando padding font e agendo anche sul margin per bilanciare la traslazione orizzontale)
+4)La centratura verticale di testo e img affiancati nell'aside con flex/align-items:center riesce più facile rispetto al vertical align(che per funzionare senza
+"aggiustare di margin top/bottom" richiederebbe display table/display:table-cell i quali però renderebbero il codice "poco leggibile") */
