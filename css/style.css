@@ -449,4 +449,5 @@ sarebbe stato meglio costruire la barra come border left del div contenuto nei 3
 3)Se avessi costruito bottone senza dimensioni ma col padding a partire dal contenuto il transform scale per lo zoom non avrebbe funzionato
 perché lavora su dimensioni(in quel caso avrei dovuto fare lo zoom "a mano" cambiando padding font e agendo anche sul margin per bilanciare la traslazione orizzontale)
 4)La centratura verticale di testo e img affiancati nell'aside con flex/align-items:center riesce più facile rispetto al vertical align(che per funzionare senza
-"aggiustare di margin top/bottom" richiederebbe display table/display:table-cell i quali però renderebbero il codice "poco leggibile") */
+"aggiustare di margin top/bottom" richiederebbe display table/display:table-cell i quali però renderebbero il codice "poco leggibile")
+5)Il css è pensato per evitare il data loss, per cui devo essere io a lavorare con l'overflow quando il contenuto esce dal contenitore */
